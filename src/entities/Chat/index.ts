@@ -1,0 +1,5 @@
+export { useSendMessageMutation, useDeleteNotification, useGetNotification, useGetChatHistory } from './model/api'
+export { reducer as ChatReducer } from './model/chat.slice'
+export { actions as ChatActions } from './model/chat.slice'
+export { getPhoneNumberSelector, getNotificationsSelector } from './model/selectors'
+export { type ChatDialogState } from './model/chat.slice'

@@ -1,0 +1,25 @@
+.wrapper {
+  padding: 6px;
+  border-radius: 6px;
+  min-width: 10vw;
+}
+
+.incoming {
+  background-color: #ffffff;
+  margin-right: auto;
+  width: max-content;
+}
+
+.outcoming {
+  background-color: #d9fdd3;
+  margin-left: auto;
+  width: max-content;
+}
+
+.time {
+  font-size: 11px;
+  line-height: 14px;
+  color: #667781;
+  width: max-content;
+  margin-left: auto;
+}
