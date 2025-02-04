@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  front:
+    build: ./
+    container_name: GREEN_CONTAINER
+    restart: unless-stopped
+    ports: 
+      - "5173:5173"
