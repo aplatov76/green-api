@@ -10,8 +10,9 @@ export const AuthForm: FC = () => {
     <div className={styles.wrapper}>
       <div className={styles.container}>
         <h2 className={styles.title}>Введите учетные данные</h2>
-        <p className={styles.warning}>Получать уведомления о входящих сообщениях и файлах: Да</p>
-        <p className={styles.warning}>Все остальные значения инстанса, должны быть в статусе Нет</p>
+        <p className={styles.warning}>1. Получать уведомления о входящих сообщениях и файлах: Да</p>
+        <p className={styles.warning}>2. Все остальные значения инстанса, должны быть в статусе Нет</p>
+        <p className={styles.warning}>3. Пожалуйста, прежде, очистите всю очередь уведомлений!</p>
 
         <Input
           type="text"

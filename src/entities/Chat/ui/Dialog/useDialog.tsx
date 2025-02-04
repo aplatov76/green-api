@@ -25,13 +25,11 @@ export const useDialog = () => {
   const {
     data: notification,
     isFetching,
-    isUninitialized,
-    refetch
+    isUninitialized
   } = useGetNotification({ ...apiBaseArgs, phoneNumber }, { skip: isSkip, refetchOnFocus: true, pollingInterval })
 
   const deleteNotificationInQuene = async (id: number) => {
     await deleteNotification({ ...apiBaseArgs, id }).unwrap()
-    refetch()
   }
 
   useEffect(() => {
@@ -42,7 +40,6 @@ export const useDialog = () => {
     if (isFetching) {
       return
     }
-
     if (notification) {
       const removedId = notification.receiptId
 

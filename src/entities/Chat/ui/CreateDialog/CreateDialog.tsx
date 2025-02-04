@@ -15,7 +15,11 @@ const CreateDialog: FC = () => {
 
   return (
     <div className={styles.wrapper}>
-      <Input onChange={setCurrentNumberCompanion} className={styles.input} />
+      <Input
+        onChange={setCurrentNumberCompanion}
+        placeholder="Формат ввода номера 79116770000"
+        className={styles.input}
+      />
       <Button onClick={onSubmit}>Start</Button>
     </div>
   )
