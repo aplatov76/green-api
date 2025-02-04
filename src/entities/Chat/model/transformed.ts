@@ -14,7 +14,11 @@ export const transformedChatHistoryData = (data: ChatHistory[]): ChatHistoryTran
     .reverse()
 }
 
-export const transformedNotification = (data: ReceiveIncomingNotificationsType | null, _, arg: ChatHistoryArgs) => {
+export const transformedNotification = (
+  data: ReceiveIncomingNotificationsType | null,
+  _: unknown,
+  arg: ChatHistoryArgs
+) => {
   if (!data) {
     return null
   }
@@ -45,7 +49,7 @@ export const transformedNotification = (data: ReceiveIncomingNotificationsType |
 
 export const transformedDeleteMessage = (
   data: { idMessage: string },
-  _,
+  _: unknown,
   arg: ChatHistoryArgsWithMessage
 ): NotificationTransformed => {
   return {
