@@ -7,8 +7,10 @@ export type AppRoutesProps = RouteProps & {
   authOnly?: boolean
 }
 
-export const getRouteAuth = () => '/auth'
-export const getRouteChat = () => '/'
+export const baseApi = 'green-api'
+
+export const getRouteAuth = () => `/${baseApi}/auth`
+export const getRouteChat = () => `/${baseApi}/`
 
 export const routeConfig: Record<keyof typeof AppRoutes, AppRoutesProps> = {
   [AppRoutes.auth]: {

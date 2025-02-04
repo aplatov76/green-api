@@ -13,5 +13,5 @@ export default defineConfig({
       }
     ]
   },
-  //base: '/green-api'
+  base: '/green-api'
 })
